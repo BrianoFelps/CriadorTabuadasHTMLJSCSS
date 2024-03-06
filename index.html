@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <title>Gerar tabuada</title>
+    </head>
+    <body>
+        <div id="container">
+            <fieldset id="containerInfo">
+
+                <legend>Informações base</legend>
+
+                    <label for="Num1">Escreva o número que deseja descobrir a tabuada:</label> <br>
+
+                    <input type="text" id="numtInput" required> <br>
+
+                    <label for="">Agora, quantas vezes ele será multiplicado:</label> <br>
+
+                    <input type="text" id="numxInput" required> <br>
+
+                    <input type="button" value="Enviar" onclick="enviarClick()" style="cursor: pointer;">
+            </fieldset>
+            <!-- Fim containerInfo -->
+
+            <fieldset id="containerRes">
+                <legend>Resultado</legend>
+                <div id="tabuada" style="display: flex;">
+                </div>
+            </fieldset>
+
+            
+        </div>
+    </body>
+    <script src="JS/index.js"></script>
+</html>

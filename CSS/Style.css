@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #225E63;
+}
+
+body {
+    background: #00ECFF;
+}
+
+#container {
+    width: 100%;
+}
+
+#container fieldset {
+    margin: 0px 5px 5px;
+    border: 3px solid #00909C;
+}
+
+#container fieldset legend{
+    font-size: 2.5em;
+    color: #225E63;
+}
+
+#container fieldset input, 
+#container fieldset label{
+    margin: 5px 5px 5px 2px;
+}
+
+#container fieldset input[type = "button"]{
+    padding: 10px 50px;
+    
+}
+
+#container #containerRes #resTab{
+    resize: none;
+}
+
+#containerRes #tabuada {
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#containerRes #tabuada .linhaTabuada {
+    min-width: 10vh;
+    padding: 2px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 2px;
+    margin: 5px;
+    box-sizing: border-box;
+}
