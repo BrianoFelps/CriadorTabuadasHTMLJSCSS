@@ -4,21 +4,38 @@
     color: #225E63;
 }
 
+html {
+    height: 100%;
+    background: #00cad8;
+    
+}
+
 body {
-    background: #00ECFF;
+    /* background: #00ECFF; */
+    background: linear-gradient(to bottom, #00ECFF, #00cad8) no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset {
+    border-radius: 10px;
 }
 
 #container {
+    display: flex;
     width: 100%;
+    min-width: 1000px;
 }
 
 #container fieldset {
     margin: 0px 5px 5px;
-    border: 3px solid #00909C;
+    border: 10px solid #00909C;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 2em;
 }
 
 #container fieldset legend{
-    font-size: 2.5em;
+    font-size: 3em;
     color: #225E63;
 }
 
@@ -27,9 +44,40 @@ body {
     margin: 5px 5px 5px 2px;
 }
 
-#container fieldset input[type = "button"]{
+#containerInfo {
+    position: relative;
+    padding: 0 0 0 10px;
+}
+
+#containerRes #tabuada {
+    font-size: 1.2em;
+}
+
+#containerInfo input[type = "text"]{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 60px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#container #containerInfo input[type = "button"]{
+    background: rgba(255, 255, 255, 0.5);
     padding: 10px 50px;
-    
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    float: right;
+}
+
+#container fieldset input[type = "button"]:hover{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
 }
 
 #container #containerRes #resTab{
@@ -45,10 +93,10 @@ body {
 
 #containerRes #tabuada .linhaTabuada {
     min-width: 10vh;
-    padding: 2px;
-    border: 1px solid black;
+    padding: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
     background: rgba(255, 255, 255, 0.61);
-    border-radius: 2px;
     margin: 5px;
     box-sizing: border-box;
 }
